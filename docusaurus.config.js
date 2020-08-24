@@ -22,15 +22,19 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     hideOnScroll: true,
-    disableDarkMode: true,
     navbar: {
       title: "Neon",
       logo: {
         alt: "Neon Logo",
         src: "logo/letter-logo.png",
       },
-      links: [
+      items: [
         { position: "left", to: "docs/intro", label: "Docs" },
         {
           position: "left",
